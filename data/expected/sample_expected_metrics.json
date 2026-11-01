@@ -1,0 +1,13 @@
+{
+  "total_raw_count": 200,
+  "valid_distinct_orders": 132,
+  "status_history_count": 170,
+  "rejects_count": 30,
+  "sum_order_amount": 198923.44,
+  "count_by_status": {
+    "PENDING": 96,
+    "DELIVERED": 12,
+    "SHIPPED": 12,
+    "PROCESSING": 12
+  }
+}

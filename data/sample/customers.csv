@@ -1,0 +1,26 @@
+customer_id,name,email,country,created_at
+CUST-00001,Casey Rodriguez,casey.rodriguez1@example.com,CAN,2025-11-02T08:00:00Z
+CUST-00002,Casey Jones,casey.jones2@example.com,GBR,2025-11-03T08:00:00Z
+CUST-00003,Cameron Smith,cameron.smith3@example.com,DEU,2025-11-04T08:00:00Z
+CUST-00004,Riley Miller,riley.miller4@example.com,FRA,2025-11-05T08:00:00Z
+CUST-00005,Sam Martinez,sam.martinez5@example.com,JPN,2025-11-06T08:00:00Z
+CUST-00006,Cameron Miller,cameron.miller6@example.com,AUS,2025-11-07T08:00:00Z
+CUST-00007,Alex Rodriguez,alex.rodriguez7@example.com,USA,2025-11-08T08:00:00Z
+CUST-00008,Casey Miller,casey.miller8@example.com,CAN,2025-11-09T08:00:00Z
+CUST-00009,Jordan Johnson,jordan.johnson9@example.com,GBR,2025-11-10T08:00:00Z
+CUST-00010,Jamie Miller,jamie.miller10@example.com,DEU,2025-11-11T08:00:00Z
+CUST-00011,Taylor Lopez,taylor.lopez11@example.com,FRA,2025-11-12T08:00:00Z
+CUST-00012,Avery Martinez,avery.martinez12@example.com,JPN,2025-11-13T08:00:00Z
+CUST-00013,Chris Gonzalez,chris.gonzalez13@example.com,AUS,2025-11-14T08:00:00Z
+CUST-00014,Dana Gonzalez,dana.gonzalez14@example.com,USA,2025-11-15T08:00:00Z
+CUST-00015,Cameron Garcia,cameron.garcia15@example.com,CAN,2025-11-16T08:00:00Z
+CUST-00016,Jamie Hernandez,jamie.hernandez16@example.com,GBR,2025-11-17T08:00:00Z
+CUST-00017,Morgan Gonzalez,morgan.gonzalez17@example.com,DEU,2025-11-18T08:00:00Z
+CUST-00018,Cameron Martinez,cameron.martinez18@example.com,FRA,2025-11-19T08:00:00Z
+CUST-00019,Sam Hernandez,sam.hernandez19@example.com,JPN,2025-11-20T08:00:00Z
+CUST-00020,Cameron Gonzalez,cameron.gonzalez20@example.com,AUS,2025-11-21T08:00:00Z
+CUST-00021,Jordan Smith,jordan.smith21@example.com,USA,2025-11-22T08:00:00Z
+CUST-00022,Riley Gonzalez,riley.gonzalez22@example.com,CAN,2025-11-23T08:00:00Z
+CUST-00023,Jordan Martinez,jordan.martinez23@example.com,GBR,2025-11-24T08:00:00Z
+CUST-00024,Riley Hernandez,riley.hernandez24@example.com,DEU,2025-11-25T08:00:00Z
+CUST-00025,Morgan Garcia,morgan.garcia25@example.com,FRA,2025-11-26T08:00:00Z

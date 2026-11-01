@@ -1,0 +1,51 @@
+# Configuration for Data Load Strategy Comparison Pipeline
+app:
+  name: "load-strategy-comparison"
+  domain: "example.com"
+  company_name: "Data Strategy Project Lab"
+  contact_email: "compliance@example.com"
+  log_level: "INFO"
+
+database:
+  backend: "duckdb"
+  threads: 4
+  memory_limit: "2GB"
+  min_free_disk_mb: 500
+
+paths:
+  sample_dir: "data/sample"
+  large_dir: "data/large"
+  expected_dir: "data/expected"
+  warehouse_dir: "data/warehouse"
+  duckdb_path: "data/warehouse/warehouse.duckdb"
+  partitions_dir: "data/warehouse/partitions"
+  reports_dir: "docs"
+  logs_dir: "logs"
+
+generator:
+  seed: 42
+  default_rows: 200
+  presets:
+    sample:
+      rows: 200
+      dir: "data/sample"
+      description: "Small starter sample for quick review, rapid tests, and UI preview"
+    large:
+      rows: 100000
+      dir: "data/large"
+      description: "Production-scale dataset (100,000+ records) for stress testing and benchmarks"
+
+strategies:
+  full_refresh:
+    staging_table: "orders_staging"
+  incremental_merge:
+    watermark_table: "watermarks"
+  partition_replace:
+    partition_column: "order_date"
+    temp_dir: "data/warehouse/tmp_partitions"
+
+benchmarks:
+  scales: [10000, 100000, 500000]
+  incremental_pct: 0.01
+  backfill_days: 7
+

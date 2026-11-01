@@ -1,0 +1,16 @@
+product_id,product_name,category,unit_price
+PROD-00001,Electronics Item 1,Electronics,319.49
+PROD-00002,Books Item 2,Books,21.49
+PROD-00003,Apparel Item 3,Apparel,70.99
+PROD-00004,Home Item 4,Home,92.99
+PROD-00005,Beauty Item 5,Beauty,47.49
+PROD-00006,Sports Item 6,Sports,64.49
+PROD-00007,Electronics Item 7,Electronics,323.99
+PROD-00008,Books Item 8,Books,25.99
+PROD-00009,Apparel Item 9,Apparel,75.49
+PROD-00010,Home Item 10,Home,97.49
+PROD-00011,Beauty Item 11,Beauty,51.99
+PROD-00012,Sports Item 12,Sports,68.99
+PROD-00013,Electronics Item 13,Electronics,328.49
+PROD-00014,Books Item 14,Books,30.49
+PROD-00015,Apparel Item 15,Apparel,79.99

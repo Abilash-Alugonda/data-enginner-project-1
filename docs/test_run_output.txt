@@ -1,0 +1,81 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\LENOVO\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\LENOVO\OneDrive\Desktop\projectcla
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, cov-7.1.0
+collecting ... collected 35 items
+
+tests/test_api.py::test_api_health PASSED                                [  2%]
+tests/test_api.py::test_api_runs_and_trigger PASSED                      [  5%]
+tests/test_api.py::test_api_rejects PASSED                               [  8%]
+tests/test_api.py::test_api_reconciliation_latest PASSED                 [ 11%]
+tests/test_api.py::test_api_benchmarks PASSED                            [ 14%]
+tests/test_api.py::test_html_pages PASSED                                [ 17%]
+tests/test_api.py::test_static_files_and_404 PASSED                      [ 20%]
+tests/test_db_connection.py::test_get_db_path_resolution PASSED          [ 22%]
+tests/test_db_connection.py::test_init_schema_creates_all_tables PASSED  [ 25%]
+tests/test_db_connection.py::test_missing_database_file_on_read_only_creates_schema PASSED [ 28%]
+tests/test_db_connection.py::test_in_memory_connection_works PASSED      [ 31%]
+tests/test_db_connection.py::test_db_session_commits_on_success PASSED   [ 34%]
+tests/test_db_connection.py::test_db_session_rolls_back_on_error PASSED  [ 37%]
+tests/test_db_connection.py::test_db_session_always_closes_connection PASSED [ 40%]
+tests/test_db_connection.py::test_backoff_retry_and_lock_error_reporting PASSED [ 42%]
+tests/test_db_connection.py::test_backoff_retry_succeeds_after_transient_lock PASSED [ 45%]
+tests/test_domain_edge_cases.py::test_domain_edge_case_order_cancelled_after_shipped PASSED [ 48%]
+tests/test_domain_edge_cases.py::test_domain_edge_case_quantity_zero_with_nonzero_amount PASSED [ 51%]
+tests/test_equivalence.py::test_cross_strategy_equivalence PASSED        [ 54%]
+tests/test_equivalence.py::test_matches_expected_labels PASSED           [ 57%]
+tests/test_generator.py::test_generator_byte_identical_reproducibility PASSED [ 60%]
+tests/test_generator.py::test_generator_different_seed_different_data PASSED [ 62%]
+tests/test_ingestion_and_validation.py::test_happy_path_validation PASSED [ 65%]
+tests/test_ingestion_and_validation.py::test_empty_input_handling PASSED [ 68%]
+tests/test_ingestion_and_validation.py::test_malformed_records_isolation PASSED [ 71%]
+tests/test_ingestion_and_validation.py::test_missing_required_fields_nulls PASSED [ 74%]
+tests/test_ingestion_and_validation.py::test_unexpected_schema_change PASSED [ 77%]
+tests/test_ingestion_and_validation.py::test_invalid_reference_key PASSED [ 80%]
+tests/test_ingestion_and_validation.py::test_duplicate_resolution_deterministic_latest_wins PASSED [ 82%]
+tests/test_strategies.py::test_full_refresh_happy_path_and_idempotency PASSED [ 85%]
+tests/test_strategies.py::test_incremental_merge_watermark_and_out_of_order PASSED [ 88%]
+tests/test_strategies.py::test_partition_replace_atomic_and_idempotency PASSED [ 91%]
+tests/test_strategies.py::test_fault_injection_and_retry_full_refresh PASSED [ 94%]
+tests/test_strategies.py::test_fault_injection_and_retry_incremental_merge PASSED [ 97%]
+tests/test_strategies.py::test_fault_injection_and_retry_partition_replace PASSED [100%]
+
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.6-final-0 _______________
+
+Name                                  Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------
+src\__init__.py                           0      0   100%
+src\api\__init__.py                       0      0   100%
+src\api\app.py                           19      0   100%
+src\api\routes.py                       154     17    89%   180-191, 204-217, 237, 275, 288, 314-315, 396, 456, 499, 595, 731
+src\benchmarks\__init__.py                0      0   100%
+src\benchmarks\runner.py                162    162     0%   3-414
+src\config.py                            16      1    94%   19
+src\db\__init__.py                        2      0   100%
+src\db\connection.py                     86     15    83%   116, 120-124, 130-133, 177, 212-213, 224-225
+src\generate_favicons.py                 38     38     0%   3-66
+src\generator.py                        180     18    90%   126-131, 232-233, 391-404, 408
+src\ingestion\__init__.py                 0      0   100%
+src\ingestion\reader.py                  73     12    84%   37, 41, 58-59, 84-93, 98, 121-122, 138, 142
+src\models.py                           102      8    92%   39-41, 71, 80, 89, 96-97
+src\observability\__init__.py             0      0   100%
+src\observability\logger.py              18      0   100%
+src\pipeline.py                          94     39    59%   80, 113, 134-190
+src\reconciliation\__init__.py            0      0   100%
+src\reconciliation\reconciler.py         59      0   100%
+src\storage\__init__.py                   0      0   100%
+src\storage\db.py                        37      7    81%   25, 38, 49, 67-70
+src\strategies\__init__.py                0      0   100%
+src\strategies\base.py                   52      2    96%   57, 105
+src\strategies\full_refresh.py           36      3    92%   87-88, 101
+src\strategies\incremental_merge.py      44      1    98%   153
+src\strategies\partition_replace.py      96      7    93%   28-32, 192, 226
+src\validation\__init__.py                0      0   100%
+src\validation\validator.py             111     15    86%   50-51, 127-136, 167-177, 221-231, 248-258, 319-320
+-------------------------------------------------------------------
+TOTAL                                  1379    345    75%
+============================= 35 passed in 18.98s =============================

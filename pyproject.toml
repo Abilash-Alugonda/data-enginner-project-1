@@ -1,0 +1,20 @@
+[project]
+name = "load-strategy-comparison"
+version = "0.1.0"
+description = "Comparison of full refresh, incremental merge, and partition replacement load strategies"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]
+addopts = "-v --tb=short"

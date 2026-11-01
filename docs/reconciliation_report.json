@@ -1,0 +1,44 @@
+{
+  "run_id": "RUN-FULL_REFRESH-20261101_060153",
+  "source_count": 200,
+  "cross_strategy_equivalence": true,
+  "dataset_hashes": {
+    "full_refresh": "d3f3a26523ecc2f25b87eda989f868b55ef22a65baf6ad68eff6516d1a12a977"
+  },
+  "conservation": {
+    "full_refresh": {
+      "source_count": 200,
+      "status_history_count": 170,
+      "rejects_count": 30,
+      "target_distinct_orders": 132,
+      "balanced": true
+    }
+  },
+  "metrics": {
+    "full_refresh": {
+      "total_orders": 132,
+      "sum_order_amount": 198923.44,
+      "count_by_status": {
+        "DELIVERED": 12,
+        "PENDING": 96,
+        "PROCESSING": 12,
+        "SHIPPED": 12
+      },
+      "count_by_date": {
+        "2026-01-01": 13,
+        "2026-01-02": 14,
+        "2026-01-03": 14,
+        "2026-01-04": 13,
+        "2026-01-05": 12,
+        "2026-01-06": 13,
+        "2026-01-07": 13,
+        "2026-01-08": 13,
+        "2026-01-09": 13,
+        "2026-01-10": 14
+      },
+      "dataset_hash": "d3f3a26523ecc2f25b87eda989f868b55ef22a65baf6ad68eff6516d1a12a977",
+      "status_history_count": 170,
+      "rejects_count": 30
+    }
+  }
+}
