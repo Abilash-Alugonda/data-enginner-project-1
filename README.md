@@ -433,4 +433,64 @@ The local FastAPI application serves both programmatic endpoints and the static 
 1. Implement parallel worker execution for partition replacement using ProcessPoolExecutor.
 2. Add Apache Iceberg and Delta Lake metadata catalog adapters alongside the native Parquet partitioned structure.
 3. Integrate OpenTelemetry trace exporting for distributed pipeline tracing.
+## Live Demo
 
+🚀 **Vercel Deployment:**  
+[View Data Engineering Project](https://vercel.com/abilash6/data-enginner-project-1/6fEZLLXaLhJurVTVVXEQ8dT3ndSD#L13)
+# Data Engineering Pipeline Comparison
+
+## Project Overview
+
+This project implements and compares three major data-loading strategies used in modern Data Engineering:
+
+1. **Full Refresh** – Reloads the complete dataset into the target database.
+2. **Incremental Merge** – Processes only new and updated records while maintaining existing data.
+3. **Partition Replacement** – Replaces specific data partitions instead of reloading the entire dataset.
+
+The main objective is to evaluate the performance, accuracy, scalability, and failure-recovery capabilities of these three loading strategies by processing the same dataset through independent ETL pipelines.
+
+## Project Objectives
+
+- Implement three different data-loading strategies.
+- Generate and process sample datasets.
+- Perform data ingestion, cleaning, and transformation.
+- Validate data quality and database schemas.
+- Identify and handle duplicate records.
+- Compare execution time and processing performance.
+- Verify that all three strategies produce equivalent final results.
+- Analyze failure recovery and data consistency.
+
+## Key Features
+
+- Automated ETL pipeline implementation.
+- Data validation and transformation.
+- Duplicate detection and handling.
+- Full refresh data loading.
+- Incremental data processing and merging.
+- Partition-based data replacement.
+- Performance and execution-time comparison.
+- Data consistency and accuracy validation.
+- Failure-recovery analysis.
+
+## Technologies Used
+
+- Python
+- SQL
+- Database Management
+- ETL (Extract, Transform, Load)
+- Data Validation
+- Data Processing
+
+## Expected Outcomes
+
+This project demonstrates how different data-loading strategies work in real-world data engineering environments. It provides a practical comparison of execution time, processing complexity, scalability, data consistency, and recovery capabilities.
+
+## Project Purpose
+
+The project was developed to gain practical experience in Data Engineering concepts, ETL pipeline development, SQL-based data processing, and analytical data management.
+
+## Author
+
+**Abilash Reddy Alugonda**
+
+GitHub: [Abilash-Alugonda](https://github.com/Abilash-Alugonda)
